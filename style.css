@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://drive.google.com/uc?id=1NpChyTullfdPWy_7yFDMpt1XJUHJytn8') center/cover no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+#employeeDetails {
+    opacity: 0.95;
+    max-width: 400px;
+    background-image: linear-gradient(to bottom right, #4c2662, #c81b67);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Add transitions */
+}
+
+img {
+    max-width: 50%; /* Reduce image size by half */
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Add transitions */
+}
+
+img:hover {
+    transform: scale(1.1); /* Zoom in effect on hover */
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    font-size: 28px;
+    margin-bottom: 10px;
+    transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out; /* Add transitions */
+}
+
+h2:hover {
+    font-size: 28px; /* Increase font size on hover */
+    color: #ffffff; /* Change text color on hover */
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#employeeDetails {
+    animation: fadeIn 0.5s ease-in-out;
+}
